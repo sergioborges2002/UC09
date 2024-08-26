@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Comparação</title>
+</head>
+<body>
+    <script>
+        //operadores de comparação
+
+        //igualdade
+        //leva em conta somente o valor e não leva em conta o tipo do dado
+        //o sinal = é usado para atribuição
+        //comparação será ==
+        document.write((5==5),"<br>")//true
+        document.write(("5"==5),"<br>")//true -
+
+        document.write("<hr>")
+        //identicidade - se sao identicos - ===
+        //mesmo valor e mesmp tipo
+        document.write(("5"=== 5),"<br>")//false
+        document.write(("5"=== "5"),"<br>")//true
+        document.write((5=== 5),"<br>")//true
+
+        document.write("<hr>")
+
+        //diferença
+        document.write((5!=5),"<br>")//false
+        document.write(("5"!=5),"<br>")//false
+        document.write((50!=5),"<br>")//true
+
+        document.write("<hr>")
+
+        //nao identico
+        document.write(("5" !== 5),"<br>")//true
+        document.write(("5"!=="5"),"<br>")//false
+        document.write((5!==5),"<br>")//false
+
+        document.write("<hr>")
+        
+        //maior ou menor
+        document.write((5 > 5),"<br>")//false
+        document.write((5 < 5),"<br>")//false
+        document.write((5 >= 5),"<br>")//true
+        document.write((5 <= 5),"<br>")//true
+
+
+
+    </script>
+    
+</body>
+</html>

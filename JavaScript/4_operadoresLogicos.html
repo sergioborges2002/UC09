@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        //AND - palavra AND depreciada - &&
+        document.write((5 == 5) && (5<5),"<br>")//(V && F) F
+        document.write((5 == 5) && (5<6),"<br>")//(V && V) V
+        document.write((5 != 5) && (5<5),"<br>")//(F && F) F
+
+        document.write("<hr>")
+        //OR - palavra OR depreciada ||
+        document.write((5 == 5) || (5<5),"<br>")//(V && F) F
+        document.write((5 == 5) ||(5<6),"<br>")//(V && V) V
+        document.write((5 != 5) || (5<5),"<br>")//(F && F) F
+
+        document.write("<hr>")
+        //XOR - palavra XOR depreciada - ^ - ou unico - exclusivo
+        document.write((5 == 5) ^ (5<5),"<br>")//(V && V) V
+        document.write((5 == 5) ^ (5<6),"<br>")//(V && V) F
+        document.write((5 != 5) ^ (5<5),"<br>")//(F && F) F
+
+        /*
+        TABELA VERDADE
+        P1 P2 AND OR XOR
+        V  V  V   V  F
+        V  F  F   V  V
+        F  V  F   V  V
+        F  F  F   F  F
+        */
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada e Saida</title>
+</head>
+<body>
+    <script>
+        //Entrada de dados
+        let num = prompt("escolha um numero")
+       //Processamento de dados
+       let quadrado = num * num //conversão implicita - transforma em numero automaticamente
+       let retangulo = num - num // conversão implicita
+       let triangulo = num / num // conversão implicita
+       let circulo = Number(num) + parseInt(num) // parseFloat() //conversão de tipo
+       //Saida de dados
+       //Resultado na Janela
+        window.alert("O Resultado da Mutiplicação é: "+ quadrado)
+        window.alert("O Resultado da Subtração é: "+ retangulo)
+        window.alert("O Resultado da Divisão é: "+ triangulo)
+        window.alert("O Resultado da Soma é: "+ circulo)
+        //Resultado na Página
+       //apartir da ultima versão do JavaScript temos interpolação de variavel
+       //a string tem que estar delimitada com acento agudo
+       document.write(`A Multiplicação de ${num} por ${num} é: ${quadrado}`)
+       document.write("<br>")
+       document.write("A Subtração de ",num, " com ",num," é: ", retangulo)
+       document.write("<br>")
+       document.write("A Divisão de ",num, " com ",num," é: ", triangulo )
+       document.write("<br>")
+       document.write("A Soma de ", num, " com ",num," é: ", circulo)
+       //Resultado no console
+       console.log("O Resultado da Mutiplicação é: "+ quadrado);
+       console.log("O Resultado da Subtração é: "+ retangulo);
+       console.log("O Resultado da Divisão é: "+ triangulo);
+       console.log("O Resultado da Soma é: "+ circulo);
+
+        
+
+        
+    </script>
+</body>
+</html>
