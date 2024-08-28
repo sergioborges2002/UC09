@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: "Comic Sans MS";
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nota1 = prompt("Insira 1ª Nota")
+        let nota2 = prompt("Insira 2ª Nota")
+        let nota3 = prompt("Insira 3ª Nota")
+        let nota4 = prompt("Insira 4ª Nota")
+        let media = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3) +parseInt(nota4) ) / 4
+        if (media>=7) {
+            alert("Foi aprovado")
+            document.write("Foi aprovado"+"<br>")
+            document.write("Suas notas foram: "+nota1+"+"+nota2+"+"+nota3+"+"+nota4+"<br>" )
+            document.write("A Média foi: "+media)
+        }
+        else if(media>=5 && media<7){
+            alert("De Recuperação")
+            document.write("De recuperação"+"<br>")
+            document.write("Suas Notas foram: "+nota1+"+"+nota2+"+"+nota3+"+"+nota4+"<br>" )
+            document.write("A Média foi: "+media)
+        }
+        else{
+            alert("Foi reprovado")
+            document.write("Foi Reprovado"+"<br>")
+            document.write("Suas Notas foram: "+nota1+"+"+nota2+"+"+nota3+"+"+nota4+"<br>" )
+            document.write("A Média foi: "+media)
+        }
+    </script>
+    
+</body>
+</html>

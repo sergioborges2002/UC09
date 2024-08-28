@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let valor = prompt("Digite um valor entre um 1 e 10")
+
+        if(valor >= 1 && valor <= 10){
+            document.write("Valor válido: ",valor, "<br>")
+        }
+        else{
+            document.write("Valor inválido: ",valor)
+        }
+        document.write("<hr> Negação <hr>")
+
+        if(valor<1 || valor>10){
+            document.write("Valor inválido: ",valor)
+        }
+        else{
+            document.write("Valor válido: ",valor)
+        }
+
+    </script>
+    
+</body>
+</html>
