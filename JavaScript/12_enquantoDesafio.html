@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            font-size: 20px;
-            font-family: "Comic Sans MS";
-        }
-    </style>
 </head>
 <body>
+    
     <span style="color: red;">vermelho</span>
-    <span style="color: blue;">azul</span>
+    <span style="color: black;">azul</span>
     <span style="color: green;">verde</span>
     <hr>
 
@@ -34,7 +29,28 @@
             
             
         }
+        ////////////////////////////////////////
+        document.write("<hr>")
+        cont=1
+        while(cont<=100){
+           
+            if(cont%5==0){
+                document.write('<span style="color:green;">'+cont+'</span>,')
+
+            }
+            else if(cont%2==0){
+                document.write('<span style="color: red;">'+cont+'</span>,')
+            }
+            else{
+                document.write(cont+",")
+            }
+            
+            cont++
+            
+            
+        }
+        
     </script>
-    
+   
 </body>
 </html>
