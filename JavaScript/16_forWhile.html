@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    /*
+            enquanto(while) e repita(do...while) são estruturas de controle
+            de repetição CONDICIONAIS
+            a variavel contadora e a variavel controladora NÃO precia ser a mesma 
+            variavel
+            Utilizar quando não sabemos quantas vezes o laço vai girar
+
+            para (for) é uma estrutura de controle de repetição
+            mas não é condicional
+            Utilizar quando sbemos quantas vezes o laço vai girar
+            
+            */
+
+            ///////////////////////////////////////////////////////////////////
+            //quais sao os multiplos de 3 que estao entre 1 e 100
+            //duas soluções é com a mesma estrutura
+            //sei quantas vezes o laço vai girar => 100 vezes
+            //pode ser feito com o enquanto, repita e para
+            //para é o mais indicado
+
+            let i=1
+            for(i=1;i<=100;i++){
+                if(i%3==0){
+                    document.write('<span style="color: red;">'+i+'</span>,')
+                }
+               else{
+                document.write(i+", ")
+               }
+            }
+            
+            document.write("<hr>")
+            
+            for(i=3;i<=100;i=i+3){
+                document.write(i+", ")
+
+            }
+            
+            
+document.write("<hr>")
+
+
+            ////////////////////////////////////////////////////////////////////
+            //qual é o primeiro multiplo comum entre 11,13 e 17
+            //duas soluções
+            //o while e o do..while a contadora e a controladora não precisam
+            //ser a mesma variavel
+            //eles sequer necessitam de contadora
+
+            let cont = 1 //contadora
+            let achei = false //não achei - controladora flag(bandeira)
+            while(achei == false){
+                if(cont%11==0 && cont%13==0 && cont%17==0){
+                    document.write(cont+"<br>")
+                    //achei = true;
+                    break;
+                }
+                cont++
+            }
+            document.write("<hr>")
+            document.write(11*13*17)
+   </script> 
+</body>
+</html>
