@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let parar, cont
+        parar = 38
+        cont = 1
+        
+        while(cont <=50){
+        document.write(cont+", ")
+            if(cont == parar){
+                break;//visualG -> INTERROMPA
+            }
+            cont++
+
+        }
+//////////////////////////////////////////////////////
+        document.write("<hr> Continue <hr>")
+
+        parar = 30
+        cont = 1
+        
+        while(cont <=50){
+        if(cont == parar){
+                cont++
+                continue;//visualG -> não tem continue
+            }
+            document.write(cont+", ")
+            cont++
+
+        }
+        
+    </script>
+    
+</body>
+</html>
