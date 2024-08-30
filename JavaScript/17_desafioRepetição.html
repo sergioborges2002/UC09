@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            border: 4px solid blue;
+            border-collapse:collapse ;
+            
+        }
+        td, th{
+            border: 2px solid green;
+        }
+    </style>
 </head>
 <body>
-   <!-- <table border="1">
+    <table border="1">
         <thead>
             <th>Nome</th>
             <th>Cargo</th>
@@ -14,40 +24,51 @@
             <th>Salario</th>
 
         </thead>
-        <tbody>table body - corpo da tabela
-            <tr>table row linha de tabela
-                <td>Sergio Borges</td>Table data - dado da tabela
+        <tbody> <!-- body - corpo da tabela-->
+            <tr> <!-- table row linha de tabela-->
+                <td>Sergio Borges</td><!-- Table data - dado da tabela-->
                 <td>Aluno</td>
                 <td>Lapa Tito</td>
                 <td>2.00</td>
                 <td>ola mundo</td>
             </tr>
-            <tr>table row linha de tabela
-                <td>Fugiro Nakombi</td> Table data - dado da tabela
+            <tr>
+                <td>Fugiro Nakombi</td> 
                 <td>Motorista</td>
                 <td>Lapa Tito</td>
                 <td>2.00</td>
                 </tr>
-</tbody>
-<tfoot>
-    <tr>table row linha de tabela
-        <td>Ava dias</td> Table data - dado da tabela
+                <tr>
+        <td>Ava dias</td>
         <td>Entretenimento Masculino</td>
         <td>Lapa Tito</td>
         <td>2.00</td>
         </tr>
+</tbody>
+<tfoot>
+    <th>Nome</th>
+    <th>Cargo</th>
+    <th>Filial</th>
+    <th>Salario</th>
+
+    
 
 </tfoot>
 
-    </table> -->
+    </table>
     <script>
         let num 
         
         do{
            num = prompt("Digite um numero de 1 a 10")
+           if(num<1 || num>10){
+                alert("Número Invalido")
+            }
+           
             
         }
         while(num<1 || num>10)
+            
             document.write("<hr>")
         
         
@@ -57,9 +78,9 @@
                      document.write("<tr>")
                 document.write("<td>", i ,"</td>")
                 document.write("<td> * </td>")
-                document.write("<td> n </td>")
+                document.write("<td>", num ,"</td>")
                 document.write("<td> = </td>")
-                document.write("<td> 50 </td>")
+                document.write(`<td> ${i*num} </td>`)
 }
 
 

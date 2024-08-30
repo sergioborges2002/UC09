@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculaHipotenusa() {
+            let num1, num2, soma
+            num1 = prompt("Digite o primeiro numero")
+            num2 = prompt("Digite o segundo numero")
+            soma = parseInt(num1 * num1) + parseInt(num2 * num2)
+            document.write("A hipotenusa de " + num1 + " e " + num2 + " é = " + Math.sqrt(soma))
+            document.write("<br>")
+            document.write("A hipotenusa de " + num1 + " e " + num2 + " é = " + soma ** (1 / 2))
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <script>
+//toda função deve ter um nome que identifique o que ela faz
+//usar camelcase
+calculaHipotenusa()
+
+
+document.write("<hr>")
+calculaHipotenusa()
+
+
+document.write("<hr>")
+calculaHipotenusa()
+
+
+document.write("<hr>")
+calculaHipotenusa()
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
