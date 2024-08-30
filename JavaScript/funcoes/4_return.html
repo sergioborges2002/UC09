@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        //por definição function retorna valores
+        //recebe valores - opcional - porem NÃO convera com os usuarios
+        //conceito de responsabilidade unica - faz somente uma coisa
+        //o nome descreve o que a função executa
+        //sintaxe camel case - calculaHipotenusa
         function calculaHipotenusa(num1,num2) {
             let soma
             soma = parseInt(num1 * num1) + parseInt(num2 * num2)
-            document.write("A hipotenusa de " + num1 + " e " + num2 + " é = " + Math.sqrt(soma))
+            return("A hipotenusa de " + num1 + " e " + num2 + " é = " + Math.sqrt(soma))
             document.write("<br>")
-            document.write("A hipotenusa de " + num1 + " e " + num2 + " é = " + soma ** (1 / 2))
+            return("A hipotenusa de " + num1 + " e " + num2 + " é = " + soma ** (1 / 2))
         }
 
 
@@ -19,22 +24,27 @@
 </head>
 
 <body>
-    <script>
+<script>
 //toda função deve ter um nome que identifique o que ela faz
 //usar camelcase
 num1=prompt("Entre com o valor do primeiro cateto")
 num2=prompt("Entre com o valor do segundo cateto")
-calculaHipotenusa(num1,num2)
+let retorno=calculaHipotenusa(num1,num2)
+alert(retorno)
 
 
 document.write("<hr>")
 i1=60
 i2=80
-calculaHipotenusa(i1,i2)
+let a =calculaHipotenusa(i1,i2)
+document.write(a)
+
 
 
 document.write("<hr>")
-calculaHipotenusa(prompt("Entre com o valor do primeiro cateto"),prompt("Entre com o valor do segundo cateto"))
+let j = calculaHipotenusa(30,40)
+console.log(j)
+
 
 
 document.write("<hr>")
@@ -45,7 +55,7 @@ calculaHipotenusa(3000,4000)
 
 
 
-    </script>
+</script>
 
 </body>
 
