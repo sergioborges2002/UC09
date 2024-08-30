@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //textos podem ser delimitados ente as aspas imples ou duplas
+        //no JS nenhuma diferença
+        document.write('O Senac é legal!!!')
+        document.write('<br>')
+        document.write("O Senac é legal!!!!!!!!!<hr>")
+        //////////////////////////////////////////////////////////////
+        //quando quero usar aspas simples ou duplas como TEXTO e não como
+        //delimitadores
+        document.write("Eu não matei Joana D'arc <br>")
+        document.write('Eu não gosto daquele "candidato", penso que só serve para ser coach')
+        document.write("<hr>")
+
+        //////////////////////////////////////////////////////////////
+        //quando quero usar aspas simples ou duplas como TEXTO e não como
+        //delimitadores
+        //utilizar caracter => escape
+        document.write('Eu não matei Joana D\'arc')
+        document.write('<br>')
+        document.write('Eu não gosto daquele \"candidato\", penso que só serve para ser coach')
+
+        ////////////////////////////////////////////////////////////
+        //quando quero colocar quebra de linha em texto que vai no JS
+        //NÃO É HTML
+        //E COLOCAR TABULAÇÃO TAMBEM
+        alert("Eu vou ao RockinRIO <br> Verei Imagine Dragons")
+        alert("Eu vou ao RockinRIO \n \tVerei Imagine Dragons")
+        document.write("<hr>")
+
+        ///////////////////////////////////////////////////////////
+        //concatenado strings
+        //se for com funçoes, algumas aceitam a virgula
+        //aceita - document.write()
+        let sobrenome="Borges"
+        document.write("Sergio ",sobrenome,)
+        document.write("<br>")
+        //nao aceita - alert()
+        alert("Sergio",sobrenome)
+        //usar concatenação - operador literal => + 
+        alert("Sergio "+sobrenome)
+        
+        ///////////////////////////////////////////////////////////
+        //interpolação de variavel 
+        //a partir da ultima versao do JS
+        //demilitar a string acento agudo
+        //nao precisa utilizar o operador literal
+        //colorcar a variavel dentro de chaves antecedida por $
+        //${sobrenome}
+        alert(`Sergio ${sobrenome} Dos Santos`)
+        document.write(`Sergio ${sobrenome} Dos Santos`)
+        console.log(`Sergio ${sobrenome} Dos Santos`)
+        let aluno= `Sergio ${sobrenome} Dos Santos`
+        alert(aluno)
+        
+        //a interpolação não funciona apenas com variavel
+        //posso utiliza-la com expressoes tambem
+        alert(`A potencia de 2 elevado a 3 é ${ 2*3 }`)
+    </script>
+    
+</body>
+</html>

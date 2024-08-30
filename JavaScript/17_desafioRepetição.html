@@ -6,12 +6,67 @@
     <title>Document</title>
 </head>
 <body>
+   <!-- <table border="1">
+        <thead>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Filial</th>
+            <th>Salario</th>
+
+        </thead>
+        <tbody>table body - corpo da tabela
+            <tr>table row linha de tabela
+                <td>Sergio Borges</td>Table data - dado da tabela
+                <td>Aluno</td>
+                <td>Lapa Tito</td>
+                <td>2.00</td>
+                <td>ola mundo</td>
+            </tr>
+            <tr>table row linha de tabela
+                <td>Fugiro Nakombi</td> Table data - dado da tabela
+                <td>Motorista</td>
+                <td>Lapa Tito</td>
+                <td>2.00</td>
+                </tr>
+</tbody>
+<tfoot>
+    <tr>table row linha de tabela
+        <td>Ava dias</td> Table data - dado da tabela
+        <td>Entretenimento Masculino</td>
+        <td>Lapa Tito</td>
+        <td>2.00</td>
+        </tr>
+
+</tfoot>
+
+    </table> -->
     <script>
-        let num = prompt("Digite um numero de 1 até 10")
+        let num 
+        
         do{
-            prompt("Digite um numero de 1 até 10")
+           num = prompt("Digite um numero de 1 a 10")
+            
         }
         while(num<1 || num>10)
+            document.write("<hr>")
+        
+        
+            document.write('<table border="1">')
+           
+                for(i=1;i<=10;i++){
+                     document.write("<tr>")
+                document.write("<td>", i ,"</td>")
+                document.write("<td> * </td>")
+                document.write("<td> n </td>")
+                document.write("<td> = </td>")
+                document.write("<td> 50 </td>")
+}
+
+
+
+            document.write("</tr>")
+
+        document.write("</table>")
             
     </script>
     
