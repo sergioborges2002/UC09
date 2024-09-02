@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function teste(){
+            alert('oiiiiiiii')
+        }
+    </script>
+</head>
+<body>
+    <!-- Codigo obstrutivo: CSS e JS inline=> chamado no elemento html-->
+    <p><input id="um" type="button"  onclick="teste()" value="Clique" style="border: 1px solid black; color: green;"></p>
+    <p><input id="dois" type="button" ondblclick="teste()" value="Duplo clique"></p>
+    <p><input id="tres" type="button" onmouseover="teste()" value="mouse em cima"></p>
+    <p><input id="quatro" type="button" value="mouse em cima 2" onmouseover="console.log(Math.pow(5,3))"></p>
+
+    <script>
+        document.getElementById('um').onclick = function(){
+            teste()
+        }
+
+        document.getElementById('dois').ondblclick = teste // nao colocar parenteses - teste()
+
+        document.getElementById('tres').onmouseover= function(){
+            let num = 3
+            let res = num * num
+            alert (res)
+        }
+
+        document.getElementById('quatro').onmouseout = ()=>{
+            alert("eu sou arrow function")
+        }
+    </script>
+</body>
+</html>

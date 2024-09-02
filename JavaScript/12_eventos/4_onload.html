@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function teste(){
+            alert('oiii')
+
+        }
+        window.onload=function(){
+        document.querySelector('#um').addEventListener('click', function(){
+            teste()
+        })
+
+        
+        document.getElementById('dois').addEventListener('dblclick', teste
+        )
+
+        document.getElementById('tres').addEventListener('mouseover',()=>{
+            let num = 3
+            let res = num * num
+            alert (res)
+        })
+
+        document.getElementById('quatro').addEventListener('mouseout',()=>{
+            alert('oii')
+            
+        }) }
+    </script>
+</head>
+<body>
+    <!-- Codigo obstrutivo: CSS e JS inline=> chamado no elemento html-->
+    <p><input id="um" type="button"  onclick="teste()" value="Clique" style="border: 1px solid black; color: green;"></p>
+    <p><input id="dois" type="button"  value="Duplo clique"></p>
+    <p><input id="tres" type="button" onmouseover="teste()" value="mouse em cima"></p>
+    <p><input id="quatro" type="button" value="mouse em cima 2" onmouseover="console.log(Math.pow(5,3))"></p>
+
+    <script>
+        
+       
+    </script>
+</body>
+</html>
