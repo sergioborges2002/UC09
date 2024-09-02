@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function areaTriangulo(base, altura) {
+            let multiplicação, area
+            // base = Number(prompt("digite um valor para a base do triangulo")) 
+            // altura = Number(prompt("digite um valor para a altura do triangulo")) 
+            multiplicação = base * altura
+            area = multiplicação / 2
+            // alert("area do triangulo é " + area + " cm")
+            // document.write("area do triangulo é "+area+" cm")
+            // console.log("area do triangulo é "+area+" cm")
+            return area
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+       resposta = areaTriangulo(120,60)
+       document.write(resposta)
+
+       resposta2 = areaTriangulo(prompt("altura"),prompt("base"))
+       alert(resposta2)
+
+       resposta3 = areaTriangulo(5,6)
+       console.log(resposta3)
+    </script>
+
+</body>
+
+</html>

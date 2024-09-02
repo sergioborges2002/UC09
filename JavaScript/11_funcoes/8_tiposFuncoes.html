@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+//no JavaScript a função é um valor, portanto pode ser atribuido a uma variavel
+        //Declaração de função
+        function areaTriangulo(base,altura){
+            area = base * altura / 2
+            return area
+        }
+
+        //Expressão de função
+        //atribuo uma função anonima à uma variavel
+        let calAreaQuadrado = function(base,altura){
+            area = base * altura / 2
+            return area}
+
+            //essa função anonima pode ser no formato ARROW FUNCTION
+            //outra sintaxe para função anonima
+
+            let fatoria = (num)=>{
+                fat=1;
+                cont=1
+                while(cont<=num){
+                    fat = fat * cont
+                    cont++
+
+                }
+                return fat
+
+            }
+    </script>
+</head>
+<body>
+    <script>
+        document.write(areaTriangulo)//imprima o conteudo da função
+        document.write("<hr>")
+        document.write(areaTriangulo(25,2))
+        document.write("<hr>")
+        //////////////////////////////////////////////////////////
+        document.write(fatoria)
+        document.write("<hr>")
+        document.write(fatoria(5))
+
+        
+    </script>
+    
+</body>
+</html>
