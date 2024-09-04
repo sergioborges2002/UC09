@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" value="botao1" id="um" class="formata" style="color: red; font-family: Arial;">
+    <input type="text" value="botao1" id="dois" class="formata" style="color: green; font-family: Arial;">
+
+    <script>
+        let caixa = document.getElementById('um')
+
+        console.log(caixa)
+        document.write("<br>")
+        document.write(caixa, "<br>")
+        document.write(caixa.value, "<br>")
+        document.write(caixa.id, "<br>")
+        document.write(caixa.tagName, "<br>")
+        document.write(caixa.className, "<br>")
+
+        document.write(caixa.style, "<br>")//[object CSSStyleDeclaration]
+        document.write(caixa.style.color, "<br>")
+        document.write(caixa.style.fontFamily, "<br>")
+
+        caixa.value = "ultima aula"
+        caixa.style.color = "Blue";
+        caixa.type = "button"
+    </script>
+
+</body>
+
+</html>

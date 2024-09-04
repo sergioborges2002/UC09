@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>fundo: <input type="color" name="fundo" id="fundo"></p>
+    <p>fonte: <input type="color" name="fonte" id="fonte"></p>
+    <p>texto: <input type="text" name="texto" id="texto"></p>
+    <p><button type="button" id="botao">Aperte-me</button></p>
+    <hr>
+    <p id="resposta" style="border: 1px solid black;">oi</p>
+    <hr>
+
+    <script>
+        //nao vou interferir na caixa de cores - pego a info direta
+        let fundo = document.getElementById('fundo')
+        let fonte = document.getElementById('fonte')
+
+        //vou interferir nos elementos - pego os elementos
+        let texto = document.getElementById('texto')
+        let resposta = document.getElementById('resposta')
+        
+        //programar no elemento que sofrerá o evento
+        document.getElementById('botao').addEventListener('click',()=>{
+            //atribuição
+        resposta.innerHTML = texto.value;
+        texto.value=''
+        
+        resposta.style.color=fonte.value;
+        resposta.style.backgroundColor=fundo.value;
+        
+        })
+        
+    </script>
+</body>
+</html>
