@@ -17,8 +17,8 @@ leia(a)
 escreval("Digite 2º número")
 leia(b)
 escreval("Digite 3º número")
-escreval("Números Ordenados Crescentemente:")
 leia(c)
+escreval("Números Ordenados Crescentemente:")
 se (( a<b) e (b<c)) entao
 escreval(a, ",",b," e ",c)
 fimse
