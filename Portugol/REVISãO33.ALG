@@ -1,4 +1,4 @@
-Algoritmo "Revisão32"
+Algoritmo "Revisão33"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -6,19 +6,21 @@ Algoritmo "Revisão32"
 // Data atual  : 12/09/2024
 Var
 // Seção de Declarações das variáveis
-i,num,fat:inteiro
+i,n:inteiro
 
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
-fat<-1
-escreval("Calcular fatorial do número digitado")
-escreval("Digite um número")
-leia(num)
-para i de 1 ate num faca
-fat<-fat*i
+escreval("Divisores de um nº inteiro positivo...")
+escreval("Digite um nº inteiro positivo:")
+leia(n)
+escreval("Divisores do nº ",n,":")
+para i de 1 ate n faca
+se(n mod i = 0) entao
+escreval(i)
+fimse
 fimpara
-escreval("O fatorial de ",num," é ",fat)
+
 
 
 
