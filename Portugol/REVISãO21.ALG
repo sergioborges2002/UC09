@@ -6,45 +6,84 @@ Algoritmo "Revisão21"
 // Data atual  : 10/09/2024
 Var
 // Seção de Declarações das variáveis 
-cal,op:inteiro
+op,qtde_cal:inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc...
-escreval("     Menu de Opções")
-escreval("Pratos      | Calorias")
-escreval("Vegetariano | 180 cal")
-escreval("Peixe       | 230 cal")
-escreval("Frango      | 180 cal")
-escreval("Carne       | 180 cal")
-leia (op)
-escolha op
-caso 1
-cal<-cal+180
-caso 2
-cal<-cal+230
-caso 3
-cal<-cal+180
-caso 4
-cal<-cal+180
-outrocaso
-escreval("Opção Inválida")
-fimescolha
-limpatela
-escreval("Sobremesas      | Calorias")
-escreval("Abacaxi         | 75 cal")
-escreval("Sorvete diet    | 110 cal")
-escreval("Mouse diet      | 170 cal")
-escreval("Mouse chocolate | 200 cal")
-leia (op)
-escolha op
-caso 1
-cal<-cal+75
-caso 2
-cal<-cal+110
-caso 3
-cal<-cal+170
-caso 4
-cal<-cal+200
+qtde_cal <- 0
+    escreval("  Restaurante - TI 45")
+    escreval("     Menu de Opções")
+    escreval("-----------------------")
+    escreval("       PRATOS:")
+    escreval("-----------------------")
+    escreval("1- Vegetariano")
+    escreval("2- Peixe")
+    escreval("3- Frango")
+    escreval("4- Carne")
+    escreval("-----------------------")
+    escreval("Digite a sua opção: ")
+    leia(op)
+    escolha op
+       caso 1
+               qtde_cal <- qtde_cal + 180
+       caso 2
+               qtde_cal <- qtde_cal + 230
+       caso 3
+               qtde_cal <- qtde_cal + 250
+       caso 4
+               qtde_cal <- qtde_cal + 350
+       outrocaso
+               escreval("Opção Inválida !!!")
+               qtde_cal <- 0
+    fimescolha
+    limpatela
+    escreval("     SOBREMESAS:")
+    escreval("-----------------------")
+    escreval("1- Abacaxi")
+    escreval("2- Sorvete Diet")
+    escreval("3- Mousse Diet")
+    escreval("4- Mousse de Chocolate")
+    escreval("-----------------------")
+    escreval("Digite a sua opção: ")
+    leia(op)
+    escolha op
+       caso 1
+               qtde_cal <- qtde_cal + 75
+       caso 2
+               qtde_cal <- qtde_cal + 110
+       caso 3
+               qtde_cal <- qtde_cal + 170
+       caso 4
+               qtde_cal <- qtde_cal + 200
+       outrocaso
+               escreval("Opção Inválida !!!")
+               qtde_cal <- 0
+    fimescolha
+    limpatela
+    escreval("       BEBIDAS:")
+    escreval("-----------------------")
+    escreval("1- Chá")
+    escreval("2- Suco de Laranja")
+    escreval("3- Suco de Melão")
+    escreval("4- Refri Diet")
+    escreval("-----------------------")
+    escreval("Digite a sua opção: ")
+    leia(op)
+    escolha op
+       caso 1
+               qtde_cal <- qtde_cal + 20
+       caso 2
+               qtde_cal <- qtde_cal + 70
+       caso 3
+               qtde_cal <- qtde_cal + 100
+       caso 4
+               qtde_cal <- qtde_cal + 65
+       outrocaso
+               escreval("Opção Inválida !!!")
+               qtde_cal <- 0
+    fimescolha
+    limpatela
+    escreval("A quantidade total de calorias consumida foi de: ",qtde_cal," cal")
 
 
 
