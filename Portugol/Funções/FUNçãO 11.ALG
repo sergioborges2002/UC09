@@ -8,7 +8,7 @@ Var
 // Seção de Declarações das variáveis 
 i,n:inteiro
 s:real
-funcao frac(x:real):real
+funcao frac(x:inteiro):real
 var
 inicio
 s<-0
@@ -25,7 +25,6 @@ escreval("Soma de frações: S= 1 + 1/2 + 1/3 + 1/4 + 1/5 + ... + 1/n")
 escreval("Digite o nº de frações a calcular")
 leia (n)
 limpatela
-escreva("A soma de ",n," frações vale: ")
-escreval(frac(s):2:4)
+escreva("A soma de ",n," frações vale: ",frac(s):3:4)
 
 Fimalgoritmo
