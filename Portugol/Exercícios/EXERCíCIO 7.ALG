@@ -17,7 +17,6 @@ para i de 1 ate 100 faca
 nat[i]<-i
 se (nat[i] mod 7 = 0)entao
 nat[i]<-0
-senao
 fimse
 fimpara
 limpatela
